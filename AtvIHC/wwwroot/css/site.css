@@ -1,0 +1,269 @@
+/* Estilo geral do formulário */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Container principal */
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h4 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para os rótulos */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilos para os inputs e outros campos */
+input.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Estilos para o botão de CEP */
+button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+    button[type="button"]:hover {
+        background-color: #0056b3;
+    }
+
+/* Estilos para o botão de submit */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+
+/* Estilos para mensagens de validação */
+.text-danger {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Estilo para a área de erro geral */
+.text-danger {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input.form-control {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button[type="button"], input[type="submit"] {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 10px;
+        background-color: #f7f7f7;
+        text-align: center;
+        font-size: 14px;
+    }
+
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+    /* Estilo geral para o corpo da página */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Estilo para o título principal */
+    h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para o link 'Create New' */
+    p a {
+        font-size: 1rem;
+        color: #007bff;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+    /* Estilo da tabela */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Cabeçalhos da tabela */
+    th {
+        background-color: #007bff;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    /* Células da tabela */
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    /* Estilo das linhas da tabela */
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Estilo do rodapé da tabela */
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Links de ação (Edit, Details, Delete) */
+    td a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+    /* Responsividade: Ajustes para telas menores */
+    @media (max-width: 768px) {
+        table, th, td {
+            font-size: 0.85rem;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    /* Estilo base para os botões */
+    td a {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        margin: 0 5px; /* Espaçamento entre os botões */
+    }
+
+        /* Estilo para o botão Editar */
+        td a[href*="Edit"] {
+            background-color: #28a745; /* Cor verde */
+            color: white;
+            border: 1px solid #28a745;
+        }
+
+            td a[href*="Edit"]:hover {
+                background-color: #218838; /* Verde mais escuro no hover */
+                border-color: #218838;
+            }
+
+        /* Estilo para o botão Detalhes */
+        td a[href*="Details"] {
+            background-color: #007bff; /* Cor azul */
+            color: white;
+            border: 1px solid #007bff;
+        }
+
+            td a[href*="Details"]:hover {
+                background-color: #0056b3; /* Azul mais escuro no hover */
+                border-color: #0056b3;
+            }
+
+        /* Estilo para o botão Excluir */
+        td a[href*="Delete"] {
+            background-color: #dc3545; /* Cor vermelha */
+            color: white;
+            border: 1px solid #dc3545;
+        }
+
+            td a[href*="Delete"]:hover {
+                background-color: #c82333; /* Vermelho mais escuro no hover */
+                border-color: #c82333;
+            }
+
+    /* Responsividade - Botões se ajustam em telas pequenas */
+    @media (max-width: 768px) {
+        td a {
+            font-size: 0.9rem;
+            padding: 6px 12px;
+        }
+    }
+
+
+}
+
